@@ -6,10 +6,10 @@ function Gallery(props){
         <div>
             <ul>
                 {
-                   props.images.map(function(i) { return <GalleryImage></GalleryImage>})
+                   props.images.map(function(i) { return <GalleryImage image={i}></GalleryImage>})
                 }
             </ul>
-            <GalleryPager></GalleryPager>
+            <GalleryPager images={props.images}></GalleryPager>
         </div>
     )
 }

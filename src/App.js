@@ -6,7 +6,7 @@ import { useState } from "react";
 
 
 function App() {
-  const [images, setImages] = useState(["cat1", "cat2"]);
+  const [images, setImages] = useState(["http://placekitten.com/200/300", "http://placekitten.com/220/270"]);
 
   return (
     <div className="App">
