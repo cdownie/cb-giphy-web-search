@@ -6,12 +6,17 @@ import { useState } from "react";
 
 
 function App() {
-  const [images, setImages] = useState(["http://placekitten.com/200/300", "http://placekitten.com/220/270"]);
+  const [images, setImages] = useState([]);
+
+  const setResult = (img) => {
+    console.log(img);
+    setImages(img);
+  }
 
   return (
     <div className="App">
       <header className="App-header">
-        <GiphySearch></GiphySearch>
+        <GiphySearch setResults={setResult}></GiphySearch>
       </header>
 
       <Gallery images={images}></Gallery>

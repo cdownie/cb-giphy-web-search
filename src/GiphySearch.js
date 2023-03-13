@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function GiphySearch(){
+function GiphySearch(props){
     const [qry, setQry] = useState("");
     const [desc, setDesc] = useState("");
     const [position, setPosition] = useState(0);
@@ -9,9 +9,12 @@ function GiphySearch(){
         e.preventDefault();
 
         // make a query with the search params
+        console.log('search')
+        console.log(props.setResuls)
 
-        // push query results to state/rxStream ?
-        console.log(qry, desc, position);
+        // call setResults with some (faked) results
+       if (props.setResults)
+            props.setResults(["http://placekitten.com/200/300", "http://placekitten.com/220/270"]);
     }
 
     return(
