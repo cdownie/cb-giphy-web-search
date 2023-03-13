@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import GiphySearch from './GiphySearch.js'
 
-test('renders learn react link', () => {
-  render(<App />);
+test('renders Search Button', () => {
+  render(<GiphySearch />);
+
   const linkElement = screen.getByText(/search/i);
   expect(linkElement).toBeInTheDocument();
 });

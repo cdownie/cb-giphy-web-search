@@ -1,6 +1,6 @@
 import './App.css';
-import GiphySearch from './GiphySearch.js';
-import Gallery from './Gallery.js';
+import GiphySearch from './GiphySearch';
+import Gallery from './Gallery';
 
 function App() {
   return (
