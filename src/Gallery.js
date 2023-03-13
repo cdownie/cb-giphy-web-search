@@ -1,14 +1,12 @@
 import GalleryImage from './GalleryImage'
 import GalleryPager from './GalleryPager'
 
-function Gallery(){
-    const images = ["one", "two", "three"];
-
+function Gallery(props){
     return(
         <div>
             <ul>
                 {
-                    images.map(function(i) { return <GalleryImage></GalleryImage>})
+                   props.images.map(function(i) { return <GalleryImage></GalleryImage>})
                 }
             </ul>
             <GalleryPager></GalleryPager>
